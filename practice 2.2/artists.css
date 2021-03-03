@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+.background{
+    background-color: #dadbce;
+    min-height: 1000px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.glass{
+    margin-top: 20px;
+    width: 90%;
+    height: 950px;
+    background: linear-gradient(to right top, rgba(255,255,255,0.5),  rgba(255,255,255,0.2 ));
+    border-radius: 30px;
+    border: 2px solid rgb(180, 175, 175,0.5);
+    z-index: 2;
+    backdrop-filter: blur(10px);
+    box-shadow: 30px 30px 30px rgba(104, 104, 104, 0.253);
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content:space-between; */
+    /* align-items: center; */
+    /* padding: 10px 20px; */
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 40px 10px;
+    height: 100%;
+    flex:1;
+    background: rgba(248,231,231,0.5);
+    border-radius: 30px 0 0 30px;
+}
+
+.logo{
+    flex: 2;
+    background-image: url(images/logo_profile_200.png);
+    border-radius: 30px;
+    width: 200px;
+    height: 200px;
+    margin:0 auto
+}
+
+nav{
+    flex: 3;
+    margin: 40px 40px;
+    padding: 0 20px;
+}
+
+nav h1{
+    margin: 20px 0;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    margin:30px 0;
+}
+
+.contact{
+    /* padding-top: 80px; */
+    position: relative;
+    margin: 20px;
+    flex:1;
+}
+
+.contact a{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+}
+
+main{
+    flex:3;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-head{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid rgba(110,110,110, 0.3);
+}
+
+.search{
+    height: 30px;
+    width: 500px;
+    background: rgba(255,255,255,0);
+    border: none;
+    border-radius: 10px;
+    margin: auto 0;
+}
+
+.user{
+    display: flex;
+}
+
+.user-ava img{
+    align-items: center;
+}
+
+.user-info{
+    padding: 0 10px;
+}
+
+.info{
+    font-size: 10px;
+    color: gray;
+}
+
+.main-body{
+    padding: 40px 60px;
+}
+
+.artists{
+    display:flex;
+    justify-content: space-between;
+}
+
+.artist{
+    width: 30%;
+}
+
+.artist img{
+    width: 100%;
+}
+
+
+footer{
+    padding-top: 30px;
+    border-top: 1px solid rgba(110,110,110, 0.3);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .slogan{
+    width:400px;
+    text-align:center;
+    padding: 20px;
+    border-bottom: 3px solid gray;
+    border-top: 3px solid gray;
+}
+
+footer .media{
+    margin-top: 20px;
+}
+
+footer .media a{
+    margin:10px;
+}
+
+
+
+.circle1, .circle2, .circle3{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.circle1{
+    background: linear-gradient(to right bottom, #49DFE7, #DCEFF0);
+    top:5%;
+    right: 2%;
+}
+
+
+.circle2{
+    background: linear-gradient(to right bottom, #F362C5, #DCEFF0);
+    bottom: -15%;
+    left: 20%;
+}
+
+.circle3{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to right bottom, #F6F85B, #DCEFF0);
+    top: 10%;
+    left: 20%;
+}
