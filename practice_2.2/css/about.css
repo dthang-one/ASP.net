@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+main{
+    background-color: #dadbce;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.glass{
+    width: 90%;
+    height: 600px;
+    background: linear-gradient(to right top, rgba(255,255,255,0.5),  rgba(255,255,255,0.2 ));
+    border-radius: 30px;
+    border: 2px solid rgb(180, 175, 175,0.5);
+    z-index: 2;
+    backdrop-filter: blur(10px);
+    box-shadow: 30px 30px 30px rgba(104, 104, 104, 0.253);
+    display: flex;
+}
+
+/* .glass:after{
+    content: '';
+    position: absolute;
+    background-image: -webkit-linear-gradient(left, #00000026 0%, #ffffff14 50%, #00000036 100%);
+    backdrop-filter: 100px;
+    top:0;left:0;width: 100%;height: 100%;
+    border-radius:30px;
+} */
+
+.glass .sec{
+    flex:1;
+    background-size:cover;
+    max-height: 100%;
+    backdrop-filter: 100px;
+}
+
+.glass .sec:after{
+    content: '';
+    position: absolute;
+    background-image: -webkit-linear-gradient(left, #00000026 0%, #00000014 50%, #00000036 100%);
+    top:0;left:0;width: 100%;height: 100%;
+    border-radius: 30px;
+}
+
+.circle1, .circle2, .circle3{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.circle1{
+    background: linear-gradient(to right bottom, #49DFE7, #DCEFF0);
+    top:5%;
+    right: 2%;
+}
+
+
+.circle2{
+    background: linear-gradient(to right bottom, #F362C5, #DCEFF0);
+    bottom: -15%;
+    left: 20%;
+}
+
+.circle3{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to right bottom, #F6F85B, #DCEFF0);
+    top: 10%;
+    left: 20%;
+}
+
+#sec2{
+    background-image: url(../images/pic1_cut.jpg);
+    
+}
+
+#sec1{
+    background-image: url(../images/pic2.jpg);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+#sec3{
+    background-image: url(../images/pic3.jpg);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+
