@@ -131,7 +131,7 @@ footer .media a{
 
 
 /* smart-phone */
-@media only screen and (min-device-width : 380px) and (max-device-width : 480px) {
+@media only screen and (min-width : 380px) and (max-width : 480px) {
     .nav-name{
         display: none;
     }
@@ -181,6 +181,8 @@ footer .media a{
         /* border: 2px solid rgb(180, 175, 175,0.5); */
         z-index: 2;
         backdrop-filter: blur(10px);
+        border-radius: 0;
+        border: none;
         /* box-shadow: 30px 30px 30px rgba(104, 104, 104, 0.253); */
     }
     .circle1, .circle2, .circle3{
