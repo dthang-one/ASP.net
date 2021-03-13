@@ -6,19 +6,20 @@
 
 a{
     text-decoration: none;
-    color: white;
+    color: rgb(66, 66, 66);
 }
 
 nav{
     margin: 40px;
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.76);
+    border-bottom: 2px solid rgba(131, 131, 131, 0.76);
     padding-bottom: 20px;
 }
 
 main{
-    background-color: #333333;
+    background:linear-gradient(to bottom, rgba(112, 112, 112, 0.541), rgba(255,255,255)) ;
+    /* background-color:rgba(121, 121, 121, 0.541); */
     min-height: 800px;
     display: flex;
     align-items: center;
@@ -27,16 +28,17 @@ main{
 }
 
 footer{
-    margin-top: 50px;
+    margin-top: 38px;
     display:flex;
     flex-direction: column;
     align-items: center;
 }
 
 .glass{
+    margin : 30px 0;
     width: 90%;
-    height: 600px;
-    background: linear-gradient(to right top, rgba(255, 255, 255, 0.479),  rgba(255, 255, 255, 0.226));
+    height: 90%;
+    background: linear-gradient(to right top, rgba(255, 255, 255, 0.651),  rgba(255, 255, 255, 0.226));
     border-radius: 30px;
     border: 2px solid rgba(180, 175, 175, 0.705);
     z-index: 2;
@@ -47,7 +49,9 @@ footer{
 
 
 .nav-name{
-    color: white;
+    color: rgb(36, 36, 36);
+    color: rgb(190, 0, 0);
+
 }
 
 .cate{
@@ -58,17 +62,29 @@ footer{
 
 .cate li{
     margin: 0 10px;
+    color: rgb(190, 0, 0);
 }
+
+.cate li a{
+    color: rgb(219, 13, 13);
+}
+
 
 .nav-contact{
     padding: 5px;
     border-radius: 5px;
-    background: rgba(27, 27, 27, 0.5);
+    background: rgba(153, 153, 153, 0.5);
+    color: rgb(219, 13, 13);
+    font-weight: 700;
+}
+
+.nav-contact a{
+    color: rgb(190, 0, 0);
 }
 
 .body{
     display: flex;
-    height: 100%;
+    height: 70%;
 }
 
 .body .left{
@@ -87,23 +103,40 @@ footer{
     flex:1;display: flex;
     flex-direction: column;
     align-items: center;
-    /* padding:20px; */
 }
 
 .body .right p{
-    color: white;
-
+    color: rgb(51, 49, 49);
+    font-weight: 700;
 }
 
-
-
+.back{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.back a{
+    background:rgba(247, 106, 106, 0.767);
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: 0 auto;
+    color:rgb(53, 53, 53);
+    font-size: 20px;
+    font-weight: 700;
+}
+footer{
+    /* border-top: 2px solid white; */
+    border-radius: 0 0 30px 30px;
+    padding:20px;
+    background-color: rgba(206, 137, 137, 0.466);
+}
 
 footer .slogan{
     width:400px;
     text-align:center;
     padding: 20px;
-    border-bottom: 3px solid gray;
-    border-top: 3px solid gray;
+    border-bottom: 3px solid rgb(95, 95, 95);
+    border-top: 3px solid rgb(95, 95, 95);
 }
 
 footer .media{
@@ -114,7 +147,7 @@ footer .media a{
     margin:10px;
 }
 
-.circle1, .circle2, .circle3{
+.circle1, .circle2, .circle3, .circle4{
     width: 400px;
     height: 400px;
     border-radius: 50%;
@@ -122,7 +155,7 @@ footer .media a{
 }
 
 .circle1{
-    background: linear-gradient(to right bottom, #0ce6f1, #3f3f3f);
+    background: linear-gradient(to left bottom, #0ce6f1, #3f3f3f);
     top:5%;
     right: 2%;
 }
@@ -130,8 +163,8 @@ footer .media a{
 
 .circle2{
     background: linear-gradient(to right bottom, #F362C5, #3f3f3f);
-    bottom: -15%;
-    left: 20%;
+    bottom: 0%;
+    left: 10%;
 }
 
 .circle3{
@@ -139,5 +172,99 @@ footer .media a{
     height: 200px;
     background: linear-gradient(to right bottom, #F6F85B, #3d3d3d);
     top: 10%;
-    left: 20%;
+    left: 30%;
+}
+
+.circle4{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to right bottom, #6f0ca8, #3d3d3d);
+    bottom: 10%;
+    right: 20%;
+}
+
+@media only screen and (min-width : 380px) and (max-width : 480px) {
+    .nav-name{
+        display: none;
+    }
+
+    .nav-bar .cate{
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .nav-contact{
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .cate li{
+        margin: 0 3px;
+    }
+
+    .body{
+        display: block;
+        align-items: center;
+    }
+
+    .right p{
+        display: none;
+    }
+
+    .back{
+        margin-top: 80px;
+    }
+
+    footer{
+        margin-top:60px;
+        /* padding: 0 20px; */
+        border-radius: 0;
+    }
+
+    footer .slogan{
+        /* padding:0 20px; */
+        width: 60%;
+    }
+    footer .media a img{
+        width: 50px;
+        height: 50px;
+    }
+
+    main{
+        background-color:rgba(204, 204, 204, 0.541)
+    }
+
+    .glass{
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right top, rgba(255,255,255,0.5),  rgba(255,255,255,0.2 ));
+        /* border-radius: 30px; */
+        /* border: 2px solid rgb(180, 175, 175,0.5); */
+        z-index: 2;
+        backdrop-filter: blur(10px);
+        border-radius: 0;
+        border: none;
+        margin:0;
+        /* box-shadow: 30px 30px 30px rgba(104, 104, 104, 0.253); */
+    }
+    .circle1, .circle2, .circle3, .circle4{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+    }
+
+    .circle1{
+        top:5%;
+        right: 0%;
+    }
+    
+    .circle2{
+        bottom: 0%;
+        left: 5%;
+    }
+    .circle4{
+        bottom: 20%;
+        left: 50%;
+    }
 }

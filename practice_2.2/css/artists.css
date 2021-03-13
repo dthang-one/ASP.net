@@ -61,15 +61,11 @@ footer{
 
 
 
-
-
-
-
 /* class */
 
 .background{
     background-color: #dadbce;
-    min-height: 1000px;
+    height: 1000px;
     display: flex;
     /* align-items: center; */
     justify-content: center;
@@ -93,8 +89,6 @@ footer{
     /* padding: 10px 20px; */
 }
 
-
-
 .logo{
     /* flex: 2; */
     background-image: url(../images/logo_profile_200.png);
@@ -104,7 +98,6 @@ footer{
     height: 200px;
     margin:0 auto
 }
-
 
 .cate a{
       color:#CB4335;
@@ -133,10 +126,7 @@ li{
     border-radius: 10px;
     padding: 10px;
     font-weight:700;
-
 }
-
-
 
 .main-head{
     display: flex;
@@ -193,9 +183,6 @@ li{
     width: 100%;
 }
 
-
-
-
 footer .slogan{
     width:400px;
     text-align:center;
@@ -212,8 +199,6 @@ footer .media a{
     margin:10px;
 }
 
-
-
 .circle1, .circle2, .circle3{
     width: 400px;
     height: 400px;
@@ -226,7 +211,6 @@ footer .media a{
     top:5%;
     right: 2%;
 }
-
 
 .circle2{
     background: linear-gradient(to right bottom, #F362C5, #DCEFF0);
@@ -254,7 +238,6 @@ footer .media a{
         margin-top: 200px;
     }
 
-  
     .search{
         width: 50%;
     }
@@ -280,8 +263,6 @@ footer .media a{
         /* width: 300px; */
     }
 
-
-
     footer .slogan{
         /* padding:0 20px; */
         width: 60%;
@@ -303,13 +284,24 @@ footer .media a{
     }
 
     aside{
+        width:20%;
         flex: 1;
         padding: 30px 0;
         border-radius: 0;
     }
 
+    nav{
+        
+        margin:0 auto;
+        margin-top: 30px;
+        padding:0;
+        text-align: center;
+    }
+
+   
+
     .background{
-        min-height: 800px;
+        height: 850px;
     }
 
     .glass{
@@ -317,12 +309,12 @@ footer .media a{
         width: 100%;
         margin:0;
         border: none;
-        height: 800px;
+        height: 100%;
     }
 
     
     .contact{
-        margin: 0;
+        margin: 0 auto;
     }
 
 
@@ -343,8 +335,8 @@ footer .media a{
   
 
     .logo{
-        width: 100px;
-        height: 100px;
+        width: 70px;
+        height: 70px;
     }
 
     .search{
@@ -404,10 +396,27 @@ footer .media a{
         height: 30px;
     }
 
+
+    
+    .contact{
+        /* padding-top: 80px; */
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+        width: 80%;
+        font-size: 12px;
+        margin: 0 auto;
+        /* flex:1; */
+    }
+
     .circle1, .circle2, .circle3{
         width: 100px;
         height: 100px;
         border-radius: 50%;
         position: absolute;
+    }
+
+    .circle2{
+        bottom: 0%;
     }
 }
