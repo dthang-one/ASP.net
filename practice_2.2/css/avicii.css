@@ -161,7 +161,8 @@ li{
     height: 30px;
     width: 500px;
     background: rgba(255,255,255,0);
-    border: 1px solid gray;
+    border: none;
+    border-bottom: 1px solid gray;
     border-radius: 10px;
     margin: auto 0;
 }
